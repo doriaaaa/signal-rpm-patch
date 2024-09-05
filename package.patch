@@ -1,0 +1,35 @@
+--- package.json	2024-09-05 21:49:26.558116522 +0800
+@@ -454,22 +454,22 @@
+         "StartupWMClass": "Signal"
+       },
+       "target": [
+-        "deb"
++        "rpm"
+       ],
+       "icon": "build/icons/png",
+       "publish": []
+     },
+-    "deb": {
++    "rpm": {
+       "depends": [
+-        "libnotify4",
+-        "libxtst6",
+-        "libnss3",
+-        "libasound2",
+-        "libxss1",
+-        "libc6 (>= 2.31)",
+-        "libgtk-3-0",
+-        "libgbm1",
+-        "libx11-xcb1"
++        "libnotify-devel",
++        "libXtst-devel",
++        "nss-devel",
++        "alsa-lib-devel",
++        "libXScrnSaver-devel",
++        "glibc-devel",
++        "gtk3-devel",
++        "mesa-libgbm-devel",
++        "libX11-xcb"
+       ]
+     },
+     "protocols": {
